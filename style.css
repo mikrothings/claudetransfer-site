@@ -31,14 +31,15 @@ header .wrap { display: flex; align-items: center; gap: 12px; height: 64px; }
 header img { width: 36px; height: 36px; border-radius: 9px; }
 header a.brand { color: var(--text); text-decoration: none; font-weight: 650; font-size: 18px; }
 header nav { margin-left: auto; display: flex; gap: 18px; font-size: 14px; }
-main { padding: 40px 0 56px; }
+main.wrap { padding-top: 48px; padding-bottom: 56px; }
 h1 { font-size: 30px; line-height: 1.25; margin: 0 0 8px; }
 h2 { font-size: 20px; margin: 32px 0 8px; }
 p, li { color: var(--text); }
 .lead { font-size: 18px; color: var(--muted); margin: 0 0 28px; }
 .muted { color: var(--muted); font-size: 14px; }
 a { color: var(--accent); }
-.hero { display: flex; gap: 24px; align-items: center; margin-bottom: 8px; }
+.hero { display: flex; gap: 24px; align-items: center; margin-bottom: 28px; }
+.hero .lead { margin: 0; }
 .hero img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin: 24px 0; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
