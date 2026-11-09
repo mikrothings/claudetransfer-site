@@ -4,14 +4,6 @@ Claude Transfer'in tanıtım sayfası, gizlilik politikası ve hizmet şartları
 
 Yayın adresi: https://mikrothings.github.io/claudetransfer-site/
 
-| Dosya | Sayfa |
-|---|---|
-| `index.html` | Ana sayfa |
-| `privacy.html` | Gizlilik politikası |
-| `terms.html` | Hizmet şartları |
-| `style.css`, `logo.png` | Ortak stil ve logo |
-| `.nojekyll` | GitHub Pages'in dosyaları Jekyll'dan geçirmeden yayınlaması için |
-
 Sayfalar düz HTML'dir, derleme adımı yoktur. `main` dalına yapılan her push birkaç dakika içinde yayına çıkar.
 
 Yerelde bakmak için bu klasörde:
