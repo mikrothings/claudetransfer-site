@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy</title>
+  <meta name="description" content="How Claude Transfer handles your data and your Google Drive access.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="logo.png" alt="">
+    <a class="brand" href="./">Claude Transfer</a>
+    <nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="muted">Effective 9 November 2026</p>
+
+  <p>Claude Transfer ("the app") is a Windows command-line tool made by Mikrothings. It copies Claude Code session data between computers that belong to the same person. This policy explains what the app reads, where that data goes and how you can remove it.</p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>The app runs only on your computer. There is no Claude Transfer server.</li>
+    <li>Your data goes only to your own Google Drive, and only when you run a sync or upload a backup.</li>
+    <li>The developer never receives your data, your Google account details or your sign-in.</li>
+    <li>The app does not use analytics, tracking, advertising or telemetry.</li>
+  </ul>
+
+  <h2>Data the app reads on your computer</h2>
+  <p>To do its job, the app reads the files Claude Code keeps on your computer: conversation transcripts, prompt history, project memory files, settings and the session list of the Claude desktop app. These files can contain anything you typed into Claude Code or that Claude Code read for you, including source code and personal information. The app reads them only to copy them, and changes only file paths inside them so that they fit the other computer.</p>
+
+  <h2>Google user data</h2>
+  <p>When you run <code>claude-transfer drive login</code>, the app asks Google for one permission: <code>https://www.googleapis.com/auth/drive.file</code>. With it the app can:</p>
+  <ul>
+    <li>create a folder named <code>claude-transfer</code> in your Google Drive;</li>
+    <li>create, read, update and delete the files it put in that folder.</li>
+  </ul>
+  <p>It cannot see, read or change any other file in your Google Drive. It does not access your Gmail, contacts, calendar or any other Google service, and it does not read your name, email address or profile.</p>
+
+  <h3>How Google user data is used</h3>
+  <p>Files in the <code>claude-transfer</code> folder are used only to keep your own computers in sync and to restore your own backups. They are never used for any other purpose, including advertising, profiling or training of machine learning models.</p>
+
+  <h3>How Google user data is shared</h3>
+  <p>It is not shared with anyone. The data moves only between your computer and your Google Drive, directly over Google's encrypted (HTTPS) API. Neither Mikrothings nor any third party receives it.</p>
+
+  <h3>How Google user data is stored and protected</h3>
+  <ul>
+    <li><strong>Your synced data</strong> is stored in your Google Drive under Google's own security and retention terms.</li>
+    <li><strong>The sign-in token</strong> Google gives the app is stored only on your computer, in <code>%LOCALAPPDATA%\claude-transfer\token.dat</code>, encrypted with Windows Data Protection (DPAPI) so that only your Windows user account can read it. It is never uploaded anywhere.</li>
+  </ul>
+
+  <h3>Limited Use</h3>
+  <p>The app's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>The app keeps the data in your Drive until you delete it. You can remove everything at any time:</p>
+  <ul>
+    <li>Run <code>claude-transfer drive logout</code> to delete the sign-in token from your computer.</li>
+    <li>Revoke the app's access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Delete the <code>claude-transfer</code> folder from your Google Drive to remove all synced data and uploaded backups.</li>
+    <li>Delete the <code>%LOCALAPPDATA%\claude-transfer</code> folder and any local backup folder to remove the app's local files.</li>
+  </ul>
+  <p>Because the developer never holds any of your data, there is nothing for the developer to delete on your behalf.</p>
+
+  <h2>Children</h2>
+  <p>The app is a developer tool and is not directed at children under 13.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:omer@mikrothings.com">omer@mikrothings.com</a>.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Mikrothings</span>
+    <a href="./">Home</a>
+    <a href="terms.html">Terms of Service</a>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude Transfer</title>
+  <meta name="description" content="Claude Transfer moves and syncs Claude Code session data between your own Windows computers, using your own Google Drive.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="logo.png" alt="">
+    <a class="brand" href="./">Claude Transfer</a>
+    <nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <img src="logo.png" alt="Claude Transfer logo">
+    <div>
+      <h1>Claude Transfer</h1>
+      <p class="lead">A small Windows command-line tool that moves and syncs your Claude Code session data between your own computers.</p>
+    </div>
+  </div>
+
+  <p>If you work on a desktop at home and a laptop on the road, Claude Transfer keeps your conversations, project memory and settings the same on both. It can also export everything to a file before you reinstall Windows and bring it back afterwards, rewriting project folder paths when they differ between machines.</p>
+
+  <div class="grid">
+    <div class="card"><h3>Export and import</h3><p>Move projects one by one to another computer, with a new disk, folder or user name for each.</p></div>
+    <div class="card"><h3>Sync through your Drive</h3><p>Run <code>claude-transfer sync</code> on one machine, then on the other. Nothing runs in the background.</p></div>
+    <div class="card"><h3>No data loss</h3><p>When both sides changed the same conversation, the tool asks you, and can keep both copies.</p></div>
+    <div class="card"><h3>Backups</h3><p>Keeps a local copy of anything it overwrites, and can take a full backup on request and upload it to your Drive.</p></div>
+  </div>
+
+  <h2>How it uses Google Drive</h2>
+  <p>Claude Transfer signs in with your Google account and asks only for the <code>drive.file</code> permission. That permission lets it see and change only the files it created itself, in a folder named <code>claude-transfer</code> in your Drive. It cannot see any of your other Drive files.</p>
+  <p>The tool runs only on your computer and talks directly to Google. There is no Claude Transfer server: your data and your sign-in never reach the developer. Details are in the <a href="privacy.html">privacy policy</a>.</p>
+
+  <h2>Who it is for</h2>
+  <p>Claude Transfer is a personal tool built and used by Mikrothings. It is a standalone Windows executable and needs no other software installed.</p>
+
+  <p class="muted">Claude Transfer is an independent tool. It is not made, endorsed or supported by Anthropic. Claude and Claude Code are trademarks of Anthropic, PBC.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Mikrothings</span>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="mailto:omer@mikrothings.com">Contact</a>
+  </div>
+</footer>
+</body>
+</html>
