@@ -35,7 +35,7 @@
   <p>To do its job, the app reads the files Claude Code keeps on your computer: conversation transcripts, prompt history, project memory files, settings and the session list of the Claude desktop app. These files can contain anything you typed into Claude Code or that Claude Code read for you, including source code and personal information. The app reads them only to copy them, and changes only file paths inside them so that they fit the other computer.</p>
 
   <h2>Google user data</h2>
-  <p>When you run <code>claude-transfer drive login</code>, the app asks Google for one permission: <code>https://www.googleapis.com/auth/drive.file</code>. With it the app can:</p>
+  <p>The first time you sync (or run <code>claude-transfer drive login</code>), the app opens Google's sign-in page in your browser and asks for one permission: <code>https://www.googleapis.com/auth/drive.file</code>. With it the app can:</p>
   <ul>
     <li>create a folder named <code>claude-transfer</code> in your Google Drive;</li>
     <li>create, read, update and delete the files it put in that folder.</li>
